@@ -1,6 +1,9 @@
-"use client"; 
-import { useState } from 'react';
+"use client";
+import {useState} from 'react';
 import "../styles/homepage.css";
+import dynamic from "next/dynamic";
+
+const DynamicMap = dynamic(() => import("./components/Map"), { ssr: false });
 
 export default function Home() {
   const [activeTab, setActiveTab] = useState('recent');
@@ -51,13 +54,12 @@ export default function Home() {
               Events
             </button>
           </div>
-
           <div className="content-area">
             {getTabContent()}
           </div>
         </div>
         <div className="right-content">
-          {/* Reserved space for map */}
+          <DynamicMap/>
         </div>
       </div>
     </div>
