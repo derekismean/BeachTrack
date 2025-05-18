@@ -108,7 +108,7 @@ const BuildingPanel = ({ selectedBuilding, setSelectedBuilding, setActiveTab }: 
                 const match = favorites.find(
                     (fav: any) => fav.classroomLocation === selectedClassroom.location
                 );  // Checks if the favorited classrooms match the currently selected one
-
+                
                 setIsFavorited(!!match);
             } catch (err) {
                 console.error("Error checking favorite status:", err);
