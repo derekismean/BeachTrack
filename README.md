@@ -17,9 +17,12 @@
 - **Node.js**
 - **MongoDB**
 
-## 📸 Screenshots
+## 📸 Demo/Screenshots
 
-_Coming soon — UI mockups, screenshots, and live demo links._
+Watch a live demo!
+https://youtu.be/36TwNapiYSA
+
+_Coming soon — UI mockups and screenshots._
 
 ## 👥 Contributors
 
